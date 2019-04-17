@@ -2,3 +2,10 @@
 
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+def position_taken?(board,i)
+  if board[i] == "" || board[i] == " " || !(!!board[i])
+    FALSE
+  else
+    TRUE
+  end
+end
